@@ -1,0 +1,21 @@
+Ex.1 what is the function of the secondary memory in a computer?
+     -Store information for the long term, even beyond a power cycle.
+Ex.2 What is a program?
+     -A sequence of Python statements that have been crafted to do something.
+Ex.3 what is the difference between an interpreter and a compiler?
+     -A compiler translate all the high-level language into machine language in the file in one time; an interpreter translate the statement a line by a line.
+Ex.4 which of the following contains "machine language"?
+     -The Pyhton interpreter.
+Ex.5 >>> print ("hello world")
+Ex.6 Where in the computer is a variable such as "x"(x = 123) stored after the following Python line finishes?
+     -Main memory.
+Ex.7 >>> x = 43
+         x = x - 1
+         print (x)
+      >>>42
+Ex.8 Explain each of the following using an example of a human capability:
+     1) CPU---Brain
+     2) Main Memory---Short_term memory
+     3) Secondary Memory---Long_term memory
+     4) Input Device---Sense organs
+     5) Output Device---Effector organs
