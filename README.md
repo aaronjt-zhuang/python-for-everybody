@@ -1,4 +1,4 @@
-# python-for-everyone
+# python-for-everybody
 Hello there!
 I just started my Python Learning!
 I'm here to improve my skills in programming.
