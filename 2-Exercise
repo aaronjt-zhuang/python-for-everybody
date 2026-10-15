@@ -1,0 +1,24 @@
+#ex1.Write a program that uses input to prompt a user for their name and then welcome them!
+name = input('what is ur name?\n')
+print("Hello " + name)
+
+#ex2.Write a program to prompt the user for hours and rate per hour to compute gross pay!
+H = int(input('Hours: '))
+R = float(input('Rate: '))
+print('Pay: ' + str(H * R))
+
+#ex3.Assume that we execute the following assignment statements!
+width = 17
+height = 12.0
+>>>width//2 = 8            Integer
+   width/2.0 = 8.5         Float
+   height/3 = 4.0          Float
+   1 + 2 * 5 = 11          Integer
+
+#ex4.Write a program which prompt the users for a Celsius temperature, convert the temperature to Fahrenheit, and print out the converted temperture!
+C = float(input('Celsius:'))
+F = C * 9 / 5 + 32
+print('The converted Fahrenheit temperature is: ' + str(F))
+
+
+
