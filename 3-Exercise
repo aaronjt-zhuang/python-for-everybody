@@ -1,4 +1,4 @@
-Ex.1 Rewrite your pay computation to give the employee 1.5 times the hourly rate for hours worked above 40 hours!
+#Ex.1 Rewrite your pay computation to give the employee 1.5 times the hourly rate for hours worked above 40 hours!
 hours = float(input('working hours: '))
 rate = float(input('give a rateZ: '))
 if hours > 40:
@@ -8,7 +8,7 @@ else:
 
 print('Pay:', pay)
 
-Ex.2 Rewrite your pay program using try and except so that your program handles non-numeric input gracefully by printing a message and exiting the program!
+#Ex.2 Rewrite your pay program using try and except so that your program handles non-numeric input gracefully by printing a message and exiting the program!
 hours = float(input('working hours: '))
 rate = input('give a rate: ')
 try:
@@ -22,12 +22,29 @@ try:
 except:
     print('Error, please enter numeric input')
 
- Ex.3 Write a program to prompt for a score between 0.0 and 1.0. If the
-score is out of range, print an error message. If the score is between 0.0 and 1.0,
-print a grade using the following table:
-Score Grade
->= 0.9 A
->= 0.8 B
->= 0.7 C
->= 0.6 D
-< 0.6 F
+# Ex.3 Write a program to prompt for a score between 0.0 and 1.0. If thescore is out of range, print an error message. If the score is between 0.0 and 1.0,print a grade using the following table:
+#Score Grade
+#>= 0.9 A
+#>= 0.8 B
+#>= 0.7 C
+#>= 0.6 D
+#< 0.6 F
+score = input("Enter your score: ")
+try:
+    score = float(score)
+    if score >0.0 and score <1.0:
+       if score >= 0.9:
+          print("A")
+       elif score >= 0.8:
+          print("B")
+       elif score >= 0.7:
+          print("C")
+       elif score >= 0.6:
+          print("D")
+       else:
+          print("F")
+    else:
+       print("bad score")
+except ValueError:
+    print("bad score")
+
