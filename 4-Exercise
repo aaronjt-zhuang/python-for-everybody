@@ -50,6 +50,27 @@ print(computepay(hours, rate))
 #>= 0.7 C
 #>= 0.6 D
 #< 0.6 F
+score = input("Enter your score: ")
+
+try:
+    score = float(score)
+    def computegrade(score):
+        if score >= 0.9 and score < 1.0:
+            return "A"
+        elif score >= 0.8 and score < 0.9:
+            return "B"
+        elif score >= 0.7 and score < 0.8:
+            return "C"
+        elif score >= 0.6 and score < 0.7:
+            return "D"
+        elif score < 0.6:
+            return "F"
+        else:
+            return "bad score"
+    SCORE = str(computegrade(score))
+    print(SCORE)
+except ValueError:
+    print("bad score")
 
 
 
