@@ -18,4 +18,27 @@ I'm a lumberjack, and I'm okay.
 I sleep all night and I work all day.
 None
 
-#Ex.4 
+#Ex.4 What is the purpose of the “def” keyword in Python?
+It indicates that the following indented section of code is to be stored for later.
+
+#Ex.5 What will the following Python program print out?
+def fred():
+print("Zap")
+def jane():
+print("ABC")
+jane()
+fred()
+jane()
+-----ABC Zap ABC
+
+#Ex.6 Rewrite your pay computation with time-and-a-half for overtime and create a function called computepay which takes two parameters (hours and rate)!
+
+
+
+
+
+
+
+
+
+
