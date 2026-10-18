@@ -32,6 +32,24 @@ jane()
 -----ABC Zap ABC
 
 #Ex.6 Rewrite your pay computation with time-and-a-half for overtime and create a function called computepay which takes two parameters (hours and rate)!
+hours = float(input("Enter Hours: "))
+rate = float(input("Enter Rate: "))
+def computepay(hours, rate):
+    if hours > 40:
+        pay = (40 * rate) + ((hours - 40) * (rate * 1.5))
+    else:
+        pay = hours * rate
+    return pay
+
+print(computepay(hours, rate))
+
+#Ex.7 Rewrite the grade program from the previous chapter using a function called computegrade that takes a score as its parameter and returns a grade as a string.
+#Score Grade
+#>= 0.9 A
+#>= 0.8 B
+#>= 0.7 C
+#>= 0.6 D
+#< 0.6 F
 
 
 
