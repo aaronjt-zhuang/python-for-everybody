@@ -16,5 +16,26 @@ while True:
 print(Sum,count,Sum/count)
 
 #Ex.2 Write another program that prompts for a list of numbers as above and at the end prints out both the maximum and minimum of the numbers instead of the average.
+count = 0 
+total = 0
+largest = None
+smallest = None
+while True:
+    num = input('give me a number: ')
+    if num == 'done':
+        break
+    try:
+        num = int(num)
+        count = count + 1
+        total = total + num
+        if largest is None or largest < num:
+            largest = num
+        if smallest is None or smallest > num:
+            smallest = num
+
+    except:
+        print('Invalid input')
+        continue
+print(total,count,largest,smallest)
 
 
