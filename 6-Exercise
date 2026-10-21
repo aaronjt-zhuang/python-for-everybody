@@ -1,0 +1,49 @@
+#Ex.1 Write a while loop that starts at the last character in the string and works its way backwards to the first character in the string, printing each letter on a separate line, except backwards!
+word = input('give me a word: ')
+lll = 0
+index = -1
+while lll < len(word):
+    letter = word[index]
+    lll = lll + 1
+    index = index - 1
+    print(letter)
+
+#Ex.2 Given that fruit is a string, what does fruit[:] mean?
+[:] means that it is just the whole word(fruit-banana)
+
+#Ex.3 Encapsulate this code in a function named count, and generalize it so that it accepts the string and the letter as arguments!
+def count(word,chosen_letter):
+    count = 0
+    for letter in word:
+        if letter == chosen_letter:
+            count = count + 1
+    print('Your chosen letter occurs for', count , 'times!')
+y = input('Input: ')
+x = input('Please choose a letter: ')
+count(y,x)
+
+#Ex.4 There is a string method called count that is similar to the function in the previous exercise. Read the documentation of this method at: https://docs.python.org/library/stdtypes.html#string-methods. Write an invocation that counts the number of times the letter a occurs in “banana”!
+fruit = 'banana'
+print(fruit.count('a'))
+
+#Ex.5 Take the following Python code that stores a string:
+#str = 'X-DSPAM-Confidence: 0.8475'
+#Use find and string slicing to extract the portion of the string after the colon character and then use the float function to convert the extracted string into a floating point number!
+str = 'X-DSPAM-Confidence: 0.8475'
+location = str.find(':')
+target = float(str[location + 1:])
+print(target)
+
+#Ex.6 Read the documentation of the string methods at
+#https://docs.python.org/library/stdtypes.html#string-methods.
+#You might want to experiment with some of them to make sure you understand how they work. strip and replace are particularly useful. The documentation uses a syntax that might be confusing. 
+#For example, in find(sub[, start[, end]]), the brackets indicate optional arguments. So sub is required, but start is optional, and if you include start, then end is optional.
+DONE
+
+
+
+
+
+
+
+
